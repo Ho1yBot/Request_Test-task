@@ -25,6 +25,8 @@ function showSlides(n) {
   
   slides[slideIndex - 1].style.display = "flex";
   slides[slideIndex - 1].style.justifyContent = "center";
+  slides[slideIndex - 1].style.flexWrap = "wrap";
+  // slides[slideIndex - 1].style.height = "100%";
   dots[slideIndex - 1].className += " active";
   
 }
