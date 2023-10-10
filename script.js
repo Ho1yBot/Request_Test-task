@@ -2,7 +2,6 @@ let slideIndex = 1;
 const slides = document.getElementsByClassName("slide");
 const dots = document.getElementsByClassName("dot");
 
-// Function to show a specific slide
 function showSlides(n) {
   if (n > slides.length) {
     slideIndex = 1;
@@ -31,24 +30,21 @@ function showSlides(n) {
   
 }
 
-// Function to advance to the next slide
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
 
-// Function to navigate to a specific slide
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
 
-// Automatically advance to the next slide every 3 seconds (3000 milliseconds)
 // setInterval(function () {
 //   plusSlides(1);
 // }, 50000);
 
 showSlides(slideIndex);
 
-
+// Меню/аккаунт
 const menuButton = document.querySelector('.menu-button');
 const menu = document.querySelector('.menu');
 const menuContainer = document.querySelector('.menu-container');
@@ -74,3 +70,29 @@ human.textContent = humanName;
 humanMenu.textContent = humanName;
 accountName.append(human);
 menuAcc.insertAdjacentElement('afterend', humanMenu);
+
+// Бургер меню
+const burgerButton = document.getElementById('burger-button');
+const burgerContent = document.getElementById('burger-content');
+
+burgerButton.addEventListener('click', () => {
+    if (burgerContent.style.display === 'flex') {
+        burgerContent.style.display = 'none';
+    } else {
+        burgerContent.style.display = 'flex';
+    }
+});
+
+// Закрываем burger-content при клике вне меню
+document.addEventListener('click', (event) => {
+    if (!burgerContent.contains(event.target) && event.target !== burgerButton) {
+        burgerContent.style.display = 'none';
+    }
+});
+
+// Закрываем burger-content при изменении размера окна
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 767) {
+        burgerContent.style.display = 'none';
+    }
+});

@@ -118,11 +118,21 @@
                             </svg>
                         </button>
                     </li>
-                    <li class="header_account_item">
-                        <button class="btn_header_account">
-                            <div class="burger_icon">
-                            </div> 
-                        </button>
+                    <li class="header_account_item header_account_burger">
+                        <div class="burger_container">
+                            <div class="burger">
+                                <button class="btn_header_account" id="burger-button">
+                                    <div class="burger_icon"></div>
+                                </button>
+                                <div class="burger-content center" id="burger-content">
+                                    <a href="#">Главная</a>
+                                    <a href="#">Каталог</a>
+                                    <a href="#">Новости</a>
+                                    <a href="#">Наш АСЦ</a>
+                                    <a href="#">КОнтакты</a>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </li>
@@ -207,7 +217,7 @@
                         Подробнее
                     </button>
                 </div>
-                <img class="slide-image" src="img/Photo for slider 1.png" alt="slider 1">                
+                <img class="slide-image" src="img/Photo for slider 1.png" alt="slider 1">
             </div>
             <div class="slide fade ">
                 <!-- Просвечивается надпись DELL, так как используется изображение png и по макету лучшего изображения не получилось вытащить. Решил оставить как в макете и написать комментарий -->
@@ -256,7 +266,8 @@
                     <ion-icon name="caret-back-outline"></ion-icon>
                 </a> -->
                 <a class="slider-nav-btn" onclick="plusSlides(1)">
-                    <svg class="slider_nav_vector" xmlns="http://www.w3.org/2000/svg" width="106" height="23" viewBox="0 0 106 23" fill="none">
+                    <svg class="slider_nav_vector" xmlns="http://www.w3.org/2000/svg" width="106" height="23"
+                        viewBox="0 0 106 23" fill="none">
                         <path d="M94 1L104.5 11.5M104.5 11.5L94 22M104.5 11.5H0" stroke="#292D32" stroke-width="1.5" />
                     </svg>
                 </a>
@@ -268,13 +279,13 @@
                 <span class="dot" onclick="currentSlide(4)"></span>
                 <span class="dot" onclick="currentSlide(5)"></span>
             </div>
-            
+
         </div>
-        
+
     </section>
     <section class="full">
         <div class="slider_stuck center">
-            <p class="slider_stuck_txt">Выгодное предложение 
+            <p class="slider_stuck_txt">Выгодное предложение
                 от Dell</p>
             <img src="img/stuck.png" alt="stuck" class="slider_stuck_img">
         </div>
@@ -335,7 +346,7 @@
     </section>
     <section class="advantages full">
         <div class="advantages_container center">
-            
+
             <div class="adv_top">
                 <p class="best_quality_bcg">
                     best <br>quality
@@ -508,8 +519,9 @@
                             d="M0 0L257.171 0C268.101 0 278.555 4.47282 286.103 12.3786L301.413 28.4155C308.961 36.3213 319.415 40.7941 330.345 40.7941H374.816C395.697 40.7941 413.065 24.7322 414.694 3.91473L415 0V101C415 125.853 394.853 146 370 146H0V0Z"
                             fill="white" />
                     </svg>
+                    <span class="news_card_title_date">11</span>
+                    <span class="news_card_title_month">июля</span>
                     <p class="news_card_title">GE использует технологии Dell
-                        <span class="news_card_title_date">11</span> <span class="news_card_title_month">июля</span>
                     </p>
                     <p class="news_card_subtitle">Вы можете посмотреть ещё больше интересных </p>
                     <button class="news_card_item_btn">
@@ -537,8 +549,9 @@
                             d="M0 0L257.171 0C268.101 0 278.555 4.47282 286.103 12.3786L301.413 28.4155C308.961 36.3213 319.415 40.7941 330.345 40.7941H374.816C395.697 40.7941 413.065 24.7322 414.694 3.91473L415 0V101C415 125.853 394.853 146 370 146H0V0Z"
                             fill="white" />
                     </svg>
+                    <span class="news_card_title_date">11</span> <span class="news_card_title_month">июля</span>
                     <p class="news_card_title">GE использует технологии Dell
-                        <span class="news_card_title_date">11</span> <span class="news_card_title_month">июля</span>
+
                     </p>
                     <p class="news_card_subtitle">Вы можете посмотреть ещё больше интересных </p>
                     <button class="news_card_item_btn">
@@ -566,8 +579,9 @@
                             d="M0 0L257.171 0C268.101 0 278.555 4.47282 286.103 12.3786L301.413 28.4155C308.961 36.3213 319.415 40.7941 330.345 40.7941H374.816C395.697 40.7941 413.065 24.7322 414.694 3.91473L415 0V101C415 125.853 394.853 146 370 146H0V0Z"
                             fill="white" />
                     </svg>
+                    <span class="news_card_title_date">11</span> <span class="news_card_title_month">июля</span>
                     <p class="news_card_title">GE использует технологии Dell
-                        <span class="news_card_title_date">11</span> <span class="news_card_title_month">июля</span>
+
                     </p>
                     <p class="news_card_subtitle">Вы можете посмотреть ещё больше интересных </p>
                     <button class="news_card_item_btn">
@@ -595,8 +609,9 @@
                             d="M0 0L257.171 0C268.101 0 278.555 4.47282 286.103 12.3786L301.413 28.4155C308.961 36.3213 319.415 40.7941 330.345 40.7941H374.816C395.697 40.7941 413.065 24.7322 414.694 3.91473L415 0V101C415 125.853 394.853 146 370 146H0V0Z"
                             fill="white" />
                     </svg>
+                    <span class="news_card_title_date">11</span> <span class="news_card_title_month">июля</span>
                     <p class="news_card_title">GE использует технологии Dell
-                        <span class="news_card_title_date">11</span> <span class="news_card_title_month">июля</span>
+
                     </p>
                     <p class="news_card_subtitle">Вы можете посмотреть ещё больше интересных </p>
                     <button class="news_card_item_btn">
@@ -624,8 +639,9 @@
                             d="M0 0L257.171 0C268.101 0 278.555 4.47282 286.103 12.3786L301.413 28.4155C308.961 36.3213 319.415 40.7941 330.345 40.7941H374.816C395.697 40.7941 413.065 24.7322 414.694 3.91473L415 0V101C415 125.853 394.853 146 370 146H0V0Z"
                             fill="white" />
                     </svg>
+                    <span class="news_card_title_date">11</span> <span class="news_card_title_month">июля</span>
                     <p class="news_card_title">GE использует технологии Dell
-                        <span class="news_card_title_date">11</span> <span class="news_card_title_month">июля</span>
+
                     </p>
                     <p class="news_card_subtitle">Вы можете посмотреть ещё больше интересных </p>
                     <button class="news_card_item_btn">
@@ -653,8 +669,9 @@
                             d="M0 0L257.171 0C268.101 0 278.555 4.47282 286.103 12.3786L301.413 28.4155C308.961 36.3213 319.415 40.7941 330.345 40.7941H374.816C395.697 40.7941 413.065 24.7322 414.694 3.91473L415 0V101C415 125.853 394.853 146 370 146H0V0Z"
                             fill="white" />
                     </svg>
+                    <span class="news_card_title_date">11</span> <span class="news_card_title_month">июля</span>
                     <p class="news_card_title">GE использует технологии Dell
-                        <span class="news_card_title_date">11</span> <span class="news_card_title_month">июля</span>
+
                     </p>
                     <p class="news_card_subtitle">Вы можете посмотреть ещё больше интересных </p>
                     <button class="news_card_item_btn">
@@ -717,7 +734,8 @@
                     </div>
                 </div>
                 <div class="our_contacts_phone our_contacts_flex">
-                    <svg class="our_contacts_phone_svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <svg class="our_contacts_phone_svg" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                        viewBox="0 0 36 36" fill="none">
                         <path
                             d="M32.955 27.495C32.955 28.035 32.835 28.59 32.58 29.13C32.325 29.67 31.995 30.18 31.56 30.66C30.825 31.47 30.015 32.055 29.1 32.43C28.2 32.805 27.225 33 26.175 33C24.645 33 23.01 32.64 21.285 31.905C19.56 31.17 17.835 30.18 16.125 28.935C14.4 27.675 12.765 26.28 11.205 24.735C9.66 23.175 8.265 21.54 7.02 19.83C5.79 18.12 4.8 16.41 4.08 14.715C3.36 13.005 3 11.37 3 9.81C3 8.79 3.18 7.815 3.54 6.915C3.9 6 4.47 5.16 5.265 4.41C6.225 3.465 7.275 3 8.385 3C8.805 3 9.225 3.09 9.6 3.27C9.99 3.45 10.335 3.72 10.605 4.11L14.085 9.015C14.355 9.39 14.55 9.735 14.685 10.065C14.82 10.38 14.895 10.695 14.895 10.98C14.895 11.34 14.79 11.7 14.58 12.045C14.385 12.39 14.1 12.75 13.74 13.11L12.6 14.295C12.435 14.46 12.36 14.655 12.36 14.895C12.36 15.015 12.375 15.12 12.405 15.24C12.45 15.36 12.495 15.45 12.525 15.54C12.795 16.035 13.26 16.68 13.92 17.46C14.595 18.24 15.315 19.035 16.095 19.83C16.905 20.625 17.685 21.36 18.48 22.035C19.26 22.695 19.905 23.145 20.415 23.415C20.49 23.445 20.58 23.49 20.685 23.535C20.805 23.58 20.925 23.595 21.06 23.595C21.315 23.595 21.51 23.505 21.675 23.34L22.815 22.215C23.19 21.84 23.55 21.555 23.895 21.375C24.24 21.165 24.585 21.06 24.96 21.06C25.245 21.06 25.545 21.12 25.875 21.255C26.205 21.39 26.55 21.585 26.925 21.84L31.89 25.365C32.28 25.635 32.55 25.95 32.715 26.325C32.865 26.7 32.955 27.075 32.955 27.495Z"
                             stroke="#48A4EB" stroke-width="3" stroke-miterlimit="10" />
@@ -754,74 +772,83 @@
                 </div>
             </div>
             <div class="form_block">
+                <div class="form_smartphone_rel form_smartphone_abs">
+                    <img class="body_phone" src="img/iPhone-13-Pro-Max.png" alt="body_phone">
+                    <div class="body_mask">
+                        <img src="img/mask.png" alt="">
+                        <div class="screen_phone">
+                            <img src="img/screen.png" alt="screen_phone">
+                        </div>
+                    </div>
+                    <img class="body_phone2" src="img/iPhone-13-Pro-Max-mini.png" alt="body_phone2">
+                    <div class="body_mask2">
+                        <img src="img/mask-4-mini.png" alt="">
+                        <div class="screen_phone2">
+                            <img src="img/screen-mini.png" alt="screen_phone2">
+                        </div>
+                    </div>
+
+                </div>
                 <p class="form_block_title">Оставьте заявку</p>
                 <p class="form_block_subtitle">Оставьте свой номер, и мы перезвоним Вам.</p>
-                <div class="form_block_leftup_corner_name">
-                    <label class="form_block_name_txt" for="form_block_name">Ваше имя</label>
+                <div class="form_block_name_before">
+                    <div class="form_block_leftup_corner_name">
+                        <!-- <label class="form_block_name_txt" for="form_block_name">Ваше имя</label> -->
+                    </div>
+                    <input type="text" class="form_block_name" id="form_block_name">
                 </div>
-                <input type="text" id="form_block_name">
+                <div class="form_block_phone_before">
+                    <div class="form_block_leftup_corner_phone">
+                        <!-- <label class="form_block_name_txt" for="form_block_name">Ваше имя</label> -->
+                    </div>
+                    <input type="tel" id="form_block_phone">
+                </div>
+                <div class="form_block_comment_before">
+                    <div class="">
+                        <!-- <label class="form_block_comment_txt" for="form_block_comment">Комментарий</label> -->
+                    </div>
+                    <textarea type="text" id="form_block_comment"></textarea>
+                </div>
 
-                <div class="form_block_leftup_corner_phone">
-                    <label class="form_block_phone_txt" for="form_block_phone">Номер телефона</label>
-                </div>
-                <input type="tel" id="form_block_phone">
-
-                <div class="form_block_leftup_corner_comment">
-                    <label class="form_block_comment_txt" for="form_block_comment">Комментарий</label>
-                </div>
-                <textarea type="text" id="form_block_comment"></textarea>
                 <div class="form_block_link form_block_link_position">
                     <button class="form_block_btn">
                         В каталог
                     </button>
                 </div>
             </div>
-            <div class="form_smartphone_rel form_smartphone_abs">
-                <img class="body_phone" src="img/iPhone-13-Pro-Max.png" alt="body_phone">
-                <div class="body_mask">
-                    <img src="img/mask.png" alt="">
-                    <div class="screen_phone">
-                        <img src="img/screen.png" alt="screen_phone">
-                    </div>
-                </div>
-                <img class="body_phone2" src="img/iPhone-13-Pro-Max-mini.png" alt="body_phone2">
-                <div class="body_mask2">
-                    <img src="img/mask-4-mini.png" alt="">
-                    <div class="screen_phone2">
-                        <img src="img/screen-mini.png" alt="screen_phone2">
-                    </div>
-                </div>
 
-            </div>
         </div>
     </sectoin>
     <footer class="footer full">
+        <div class="footer_logo_for_mini center">
+            <a href="#"><img class="footer_logo_for_mini" src="img/dell_logo.png" alt="dell logo"></a>
+        </div>
         <div class="footer_container center">
             <a href="#"><img class="footer_logo" src="img/dell_logo.png" alt="dell logo"></a>
-            <ul class="footer_links">
-                <li>
+            <ul class="footer_links footer_links_catalog">
+                <li class="footer_links_title_wrp">
                     <a href="#" class="footer_links_title">
                         Каталог
                     </a>
                 </li>
-                <li>
+                <li class="footer_links_item_wrp footer_links_item_laptop">
                     <a href="#" class="footer_links_item">Ноутбуки</a>
                 </li>
-                <li>
-                    <a href="#" class="footer_links_item">Персональные компьютеры</a>
+                <li class="footer_links_item_wrp">
+                    <a href="#" class="footer_links_item footer_links_item_long">Персональные компьютеры</a>
                 </li>
-                <li>
+                <li class="footer_links_item_wrp">
                     <a href="#" class="footer_links_item">Серверы</a>
                 </li>
-                <li>
+                <li class="footer_links_item_wrp">
                     <a href="#" class="footer_links_item">Dell EMC</a>
                 </li>
-                <li>
-                    <a href="#" class="footer_links_item">Запасные части Dell EMC</a>
+                <li class="footer_links_item_wrp">
+                    <a href="#" class="footer_links_item footer_links_item_long">Запасные части Dell EMC</a>
                 </li>
             </ul>
             <ul class="footer_links">
-                <li>
+                <li class="footer_links_title_wrp">
                     <a href="#" class="footer_links_title">
                         Личный кабинет
                     </a>
@@ -843,7 +870,7 @@
                 </li>
             </ul>
             <ul class="footer_links">
-                <li>
+                <li class="footer_links_title_wrp">
                     <a href="#" class="footer_links_title">
                         Помощь
                     </a>
@@ -885,15 +912,17 @@
             </div>
             <div class="footer_contacts_messengers">
                 <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="38" viewBox="0 0 39 38" fill="none">
+                    <svg class="facebook" xmlns="http://www.w3.org/2000/svg" width="39" height="38" viewBox="0 0 39 38"
+                        fill="none">
                         <circle cx="18.856" cy="18.856" r="17.356" stroke="#292D32" stroke-width="3" />
                         <path
                             d="M22.9521 19.9545L23.4407 16.5678H20.3841V14.3709C20.3841 13.4444 20.8112 12.5403 22.1802 12.5403H23.5699V9.65694C23.5699 9.65694 22.3087 9.4281 21.1029 9.4281C18.5855 9.4281 16.9401 11.0501 16.9401 13.9865V16.5678H14.1418V19.9545H16.9401V28.1418C18.0812 28.3316 19.2431 28.3316 20.3841 28.1418V19.9545H22.9521Z"
                             fill="#292D32" />
                     </svg>
                 </a>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="56 0 38 38" fill="none">
+                <a class="whatsapp_wrp" href="#">
+                    <svg class="whatsapp" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="56 0 38 38"
+                        fill="none">
                         <path
                             d="M65.3672 33.3911L64.77 33.0004L64.09 33.2173C63.6767 33.3492 63.1225 33.5214 62.493 33.717C61.6119 33.9907 60.5832 34.3103 59.5864 34.6295C59.7 34.2695 59.8157 33.9016 59.93 33.5356C60.3659 32.139 60.8171 30.656 60.9312 29.9866L61.0355 29.3748L60.6771 28.8681C58.6757 26.0395 57.5 22.5873 57.5 18.856C57.5 9.27056 65.2706 1.5 74.856 1.5C84.4415 1.5 92.212 9.27056 92.212 18.856C92.212 28.4415 84.4415 36.212 74.856 36.212C71.3514 36.212 68.0936 35.1749 65.3672 33.3911Z"
                             stroke="#292D32" stroke-width="3" />
